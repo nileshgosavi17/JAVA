@@ -1,4 +1,6 @@
-/*Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. For this exercise, we'll work with the primitives used to hold integer values (byte, short, int, and long):
+/*
+
+ Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. For this exercise, we'll work with the primitives used to hold integer values (byte, short, int, and long):
 
 A byte is an 8-bit signed integer.
 A short is a 16-bit signed integer.
@@ -53,7 +55,9 @@ Explanation
 
  can be stored in a short, an int, or a long.
 
- is very large and is outside of the allowable range of values for the primitive data types discussed in this problem. */
+ is very large and is outside of the allowable range of values for the primitive data types discussed in this problem.
+ 
+ */
 
 import java.util.*;
 import java.io.*;
@@ -70,7 +74,7 @@ class Solution{
                 long x=sc.nextLong();
                 System.out.println(x+" can be fitted in:");
                 if(x>=-128 && x<=127)System.out.println("* byte");
-                //Complete the code
+     
                 if (x >= -(Math.pow(2, 16 - 1)) && x <= (Math.pow(2, 16 - 1) - 1))System.out.println("* short");
                 if (x >= -(Math.pow(2, 32 - 1)) && x <= (Math.pow(2, 32 - 1) - 1))System.out.println("* int");
                 if (x >= -(Math.pow(2, 64 - 1)) && x <= (Math.pow(2, 64 - 1) - 1))System.out.println("* long");
