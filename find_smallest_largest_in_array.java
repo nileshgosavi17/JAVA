@@ -11,8 +11,8 @@ public class find_smallest_largest_in_array {
 	public static void main(String[] args) {
 		
 		 int min, max=0,n;
-		    Scanner s= new Scanner(System.in);
-		    System.out.println("Enter your array size");
+		 Scanner s= new Scanner(System.in);
+		System.out.println("Enter your array size");
 	        n= s.nextInt();
 	        int arr[]=new int[n];
 	        System.out.println("Enter "+ n +" array elemets");
